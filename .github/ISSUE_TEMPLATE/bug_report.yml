@@ -1,0 +1,59 @@
+name: Klaidos pranešimas
+description: Praneškite apie programėlės klaidą ar neteisingą veikimą
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Programėlės versija
+      description: Pvz. 0.1.2
+      placeholder: 0.1.2
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Įrenginys
+      description: Telefono gamintojas ir modelis
+      placeholder: Pvz. Samsung Galaxy S24
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Kas nutiko?
+      description: Trumpai ir aiškiai aprašykite problemą.
+      placeholder: Aprašykite, ką matėte programėlėje.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Kaip pakartoti klaidą?
+      description: Išvardykite veiksmus nuo programėlės atidarymo iki klaidos.
+      placeholder: |
+        1. Atidariau ...
+        2. Paspaudžiau ...
+        3. Įvedžiau ...
+        4. Atsirado klaida ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ko tikėjotės?
+      placeholder: Koks rezultatas turėjo būti?
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Papildoma informacija
+      description: Galite pridėti ekrano nuotraukų, klaidos tekstą ar kitą informaciją.

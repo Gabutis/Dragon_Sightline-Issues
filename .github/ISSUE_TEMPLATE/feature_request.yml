@@ -1,0 +1,28 @@
+name: Pasiūlymas
+description: Pasiūlykite naują funkciją ar patobulinimą
+title: "[IDEA] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Koks jūsų pasiūlymas?
+      description: Aprašykite funkciją arba patobulinimą.
+      placeholder: Norėčiau, kad programėlė galėtų...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Kokią problemą tai išspręstų?
+      description: Paaiškinkite, kada ir kodėl ši funkcija būtų naudinga.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Kaip tai galėtų veikti?
+      description: Neprivaloma. Parašykite savo idėją apie veikimą ar sąsają.
